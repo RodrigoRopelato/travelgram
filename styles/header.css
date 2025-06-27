@@ -1,0 +1,49 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 32px;
+
+  align-items: center;
+}
+
+.profile{
+  display: flex;
+  gap: 32px;
+}
+
+#about{
+  width: 384px;
+}
+
+header h1{
+  color: var(--text-color-primary);
+  font: var(--text-lg);
+  margin-bottom: 8px;
+}
+
+header p{
+  font: var(--text-md);
+}
+
+.profile img{
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header ul{
+  list-style: none;
+  width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  font: var(--text-md);
+}
+
+header ul li{
+  display: flex;
+  gap: 8px;
+}
