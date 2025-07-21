@@ -23,15 +23,15 @@ nav ul li:last-child img {
   border-radius: 50%;
 }
 
-nav ul .lupa {
-  display: block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: url(../assets/icons/MagnifyingGlass.svg);
-
-  &:hover {
-    background-image: url(../assets/icons/MagnifyingGlass-hover.svg);
-  }
+nav ul li:nth-child(1){
+  & a{
+      background: url(../assets/icons/MagnifyingGlass.svg) no-repeat;
+      padding-left: 2rem;
+    }
+    
+    & a:hover{
+      background: url(../assets/icons/MagnifyingGlass-hover.svg) no-repeat;
+    }
 }
 
 @media (width >=80em) {
@@ -39,10 +39,9 @@ nav ul .lupa {
     padding-block: 1.125rem;
   }
 
-  nav ul .lupa {
-    display: none;
+  nav ul li:nth-child(1){
+  display:none;
   }
-
   nav ul li:nth-child(2){
 
     & a{
